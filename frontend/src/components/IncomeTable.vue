@@ -25,25 +25,25 @@
 
 <script>
 export default {
-    name: 'IncomeTable',
-    data(){
-        return {
-            incomes: [
-                {
-                    "id": '#23',
-                    "amount": "30000",
-                    "source": "Salary",
-                    "date": "2024-11-10",
-                    "notes": "Salary from Virgin Mobile"
-                }
-            ]
-        }
+  name: 'IncomeTable',
+  data() {
+    return {
+      incomes: [
+        {
+          id: '#23',
+          amount: '30000',
+          source: 'Salary',
+          date: '2024-11-10',
+          notes: 'Salary from Virgin Mobile',
+        },
+      ],
     }
+  },
 }
 </script>
 
 <style scoped>
-    .custom-table {
-        width: fit-content;
-    }
+.custom-table {
+  width: fit-content;
+}
 </style>
