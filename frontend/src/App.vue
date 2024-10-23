@@ -1,23 +1,34 @@
 <template>
   <div>
-    <Sidebar />
+    <Sidebar  />
+    <Summary />
+    <IncomeTable />
+    <ExpenseTable />
+    <BudgetChart />
+    <IncomeExpenseChart />
+    
   </div>
 </template>
 
 <script>
+import IncomeTable from './components/IncomeTable.vue'
 import Sidebar from './components/Sidebar.vue'
+import Summary from './components/Summary.vue'
+import ExpenseTable from './components/ExpenseTable.vue';
+import BudgetChart from './components/BudgetChart.vue';
+import IncomeExpenseChart from './components/IncomeExpenseChart.vue';
 
 export default {
   name: 'App',
   components: {
     Sidebar,
+    Summary,
+    IncomeTable,
+    ExpenseTable,
+    BudgetChart,
+    IncomeExpenseChart
   },
 }
 </script>
 
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-  #app {
-    font-family: 'Montserrat', sans-serif !important;
-  }
-</style>
+<style></style>
