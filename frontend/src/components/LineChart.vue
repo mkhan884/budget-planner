@@ -65,7 +65,7 @@ export default {
             ], // Example expense data
             fill: false,
             borderColor: '#00ADB5',
-            tension: 0.3, // Adds slight curve to the line
+            tension: 0.4, // Adds slight curve to the line
             pointRadius: 0,
           },
         ],

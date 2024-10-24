@@ -1,13 +1,15 @@
 <template>
   <div>
-    <!-- <Sidebar  />
-    <Summary />
-    <IncomeTable />
+    <!-- <Sidebar  /> -->
+    <!-- <Summary /> -->
+    <!-- <IncomeTable /> -->
     <ExpenseTable />
-    <BudgetChart />
-    <IncomeExpenseChart /> -->
-    <Dashboard />
+    <!-- <BudgetChart /> -->
+    <!-- <IncomeExpenseChart /> -->
+    <!-- <Dashboard /> -->
     <!-- <LineChart /> -->
+    <!-- <Login /> -->
+    <!-- <Registration /> -->
   </div>
 </template>
 
@@ -20,6 +22,8 @@ import BudgetChart from './components/BudgetChart.vue'
 import IncomeExpenseChart from './components/IncomeExpenseChart.vue'
 import Dashboard from './views/Dashboard.vue'
 import LineChart from './components/LineChart.vue'
+import Login from './views/Login.vue'
+import Registration from './views/Registration.vue'
 
 export default {
   name: 'App',
@@ -32,6 +36,8 @@ export default {
     IncomeExpenseChart,
     Dashboard,
     LineChart,
+    Login,
+    Registration,
   },
 }
 </script>
