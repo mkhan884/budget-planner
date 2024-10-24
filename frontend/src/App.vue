@@ -1,43 +1,33 @@
 <template>
-  <div>
-    <!-- <Sidebar  /> -->
-    <!-- <Summary /> -->
-    <!-- <IncomeTable /> -->
-    <ExpenseTable />
-    <!-- <BudgetChart /> -->
-    <!-- <IncomeExpenseChart /> -->
-    <!-- <Dashboard /> -->
-    <!-- <LineChart /> -->
-    <!-- <Login /> -->
-    <!-- <Registration /> -->
-  </div>
+ <div class="app">
+    <div v-if="$route.path !== '/' && $route.path !== '/register'" class="sidebar-container">
+      <Sidebar />
+    </div>
+    <div class="main-content">
+      <RouterView />  
+    </div>
+ </div>
 </template>
 
 <script>
-import IncomeTable from './components/IncomeTable.vue'
 import Sidebar from './components/Sidebar.vue'
-import Summary from './components/Summary.vue'
-import ExpenseTable from './components/ExpenseTable.vue'
-import BudgetChart from './components/BudgetChart.vue'
-import IncomeExpenseChart from './components/IncomeExpenseChart.vue'
-import Dashboard from './views/Dashboard.vue'
-import LineChart from './components/LineChart.vue'
-import Login from './views/Login.vue'
-import Registration from './views/Registration.vue'
 
 export default {
   name: 'App',
   components: {
-    Sidebar,
-    Summary,
-    IncomeTable,
-    ExpenseTable,
-    BudgetChart,
-    IncomeExpenseChart,
-    Dashboard,
-    LineChart,
-    Login,
-    Registration,
+    Sidebar  
   },
 }
 </script>
+
+<style scoped>
+.app{
+  display: flex;
+  height: 100vh;  
+}
+
+.main-content {
+  flex: 1 ;
+  align-content: center;
+}
+</style>
